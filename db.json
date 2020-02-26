@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "body": "bar"
+    }
+  ],
+  "comments": [
+    {
+      "id": 2,
+      "body": "qux",
+      "postId": 2
+    }
+  ]
+}
