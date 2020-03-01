@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PostsService } from '../posts.service';
 import { Router } from '@angular/router';
+import { Post } from '../Post.model';
 
 @Component({
   selector: 'app-add-post',
@@ -15,9 +16,15 @@ export class AddPostComponent implements OnInit {
   ngOnInit() {
   }
 
+  setBody($event) {
+    this.body = $event.srcElement.value;
+  }
+
   store() {
-    this.postService.storePost(this.body).subscribe(response => {
+    const post = new Post();
+    post.body = this.body;
+    this.postService.storePost(post).subscribe(response => {
       this.router.navigateByUrl('/');
-    })
+    });
   }
 }

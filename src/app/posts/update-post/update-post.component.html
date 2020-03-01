@@ -1,1 +1,8 @@
-<p>update-post works!</p>
+<div class="row">
+    <mat-form-field class="col-md-12">
+        <mat-label>Body</mat-label>
+        <input matInput [value]="body" (change)="setBody($event)">
+    </mat-form-field>
+    
+    <button class="col-md-12" (click)="store()" mat-raised-button color="primary">Update</button>
+</div>

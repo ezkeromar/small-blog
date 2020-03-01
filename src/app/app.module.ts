@@ -11,6 +11,8 @@ import { UpdatePostComponent } from './posts/update-post/update-post.component';
 import {MatTableModule} from '@angular/material/table';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
+import { AddCommentComponent } from './comment/add-comment/add-comment.component';
+import { ListCommentComponent } from './comment/list-comment/list-comment.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import {MatIconModule} from '@angular/material/icon';
     ListPostsComponent,
     AddPostComponent,
     UpdatePostComponent,
+    AddCommentComponent,
+    ListCommentComponent
   ],
   imports: [
     BrowserModule,

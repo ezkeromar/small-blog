@@ -1,8 +1,8 @@
-<div>
-    <mat-form-field>
+<div class="row">
+    <mat-form-field class="col-md-12">
       <mat-label>Body</mat-label>
-      <input matInput>
+      <input matInput (change)="setBody($event)">
     </mat-form-field>
 
-    <button (click)="store()" mat-raised-button color="primary">Primary</button>
+    <button class="col-md-12" (click)="store()" mat-raised-button color="primary">Add</button>
 </div>
